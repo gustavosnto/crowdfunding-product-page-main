@@ -1,4 +1,8 @@
 @media (max-width: 36em) {
+    header.top-header > .container {
+        width: calc(100% - 30px);
+    }
+
     .btn {
         padding: 20px 40px;
     }
@@ -20,5 +24,20 @@
                 }
             }
         }
+    }
+
+    section.goals-block {
+        text-align: center;
+
+        & .goals-info {
+            flex-basis: 100%;
+            padding: 20px 0;
+            border-right: 0px;
+            border-bottom: 2px solid $gray;
+        }
+    }
+
+    & .border-reset {
+        border-bottom: 0!important;
     }
 }

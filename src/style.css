@@ -227,6 +227,9 @@ section.project-info .block-plans .project-available b {
 }
 
 @media (max-width: 36em) {
+  header.top-header > .container {
+    width: calc(100% - 30px);
+  }
   .btn {
     padding: 20px 40px;
   }
@@ -240,6 +243,19 @@ section.project-info .block-plans .project-available b {
   }
   section.project-block .btn-section .bookmark b {
     display: none;
+  }
+  section.goals-block {
+    text-align: center;
+  }
+  section.goals-block .goals-info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 20px 0;
+    border-right: 0px;
+    border-bottom: 2px solid #EEE;
+  }
+  .border-reset {
+    border-bottom: 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
