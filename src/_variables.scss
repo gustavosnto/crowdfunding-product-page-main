@@ -24,20 +24,19 @@ header.top-header {
 
 section.project-block {
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px 20px;
+    max-width: 680px;
+    margin: -80px auto 30px auto;
+    padding: 40px;
     background-color: $white;
     border-radius: 8px;
     text-align: center;
-    margin-top: -80px;
 
     & img.logo-project {
-        margin: -55px auto 20px auto;
+        margin: -65px auto 20px auto;
         display: block;
     }
 
-    & header h1 {
+    & h1 {
         font-size: 1.8em;
         margin-bottom: 10px;
     }
@@ -45,5 +44,97 @@ section.project-block {
     & p {
         color: $darkGray;
         margin-bottom: 50px;
+    }
+
+    & .btn-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+section.goals-block {
+    width: 100%;
+    max-width: 680px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: $white;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+
+    & .goals-info {
+        flex-basis: 33.33%;
+
+        & h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        & p {
+            font-size: 0.875em;
+            color: $darkGray;
+        }
+    }
+}
+
+section.project-info {
+    width: 100%;
+    max-width: 680px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: $white;
+    border-radius: 8px;
+
+    & h1 {
+        font-size: 1.25em;
+        margin-bottom: 30px;
+    }
+
+    & p {
+        font-size: .875em;
+        color: $darkGray;
+        line-height: 1.4;
+        margin-bottom: 25px;
+    }
+
+    & .block-plans {
+        width: 100%;
+        padding: 25px;
+        border: 1px solid $lightGray;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & > h2 {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        & > b {
+            font-size: 0.875em;
+            color: $moderateCyan;
+        }
+
+        & > p {
+            color: $darkGray;
+            line-height: 1.8;
+            font-size: .875em;
+        }
+
+        & .project-available {
+            & > h3 {
+            font-size: 2.2em;
+            display: inline-block;
+            }
+
+            & b {
+                font-size: 1em;
+                color: $darkGray;
+                margin: 0px 5px;
+            }
+        }
     }
 }

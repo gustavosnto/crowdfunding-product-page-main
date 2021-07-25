@@ -5,10 +5,15 @@
     font-family: 'Commissioner', sans-serif;
 }
 
+body {
+    background-color: #EEE;
+}
+
 $moderateCyan: hsl(176, 50%, 47%);
 $darkCyan: hsl(176, 72%, 28%);
 $black: hsl(0, 0%, 0%);
 $darkGray: hsl(0, 0%, 48%);
+$lightGray: #c6c6c6;
 $white: #FFF;
 
 .container {
@@ -26,6 +31,7 @@ a {
 }
 
 .btn {
+    display: inline-block;
     padding: 15px 40px;
     font-weight: 500;
     border-radius: 50px;
