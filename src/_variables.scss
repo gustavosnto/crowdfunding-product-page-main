@@ -82,7 +82,8 @@ section.goals-block {
         padding-right: 30px;
         padding-left: 20px;
 
-        & h2 {
+        & span {
+            font-weight: 600;
             font-size: 1.8em;
             margin-bottom: 10px;
         }
@@ -133,7 +134,7 @@ section.project-info {
         margin-bottom: 25px;
     }
 
-    & .block-plans {
+    & article.block-plans {
         width: 100%;
         padding: 25px;
         border: 1px solid $lightGray;
@@ -143,14 +144,24 @@ section.project-info {
         flex-wrap: wrap;
         justify-content: space-between;
 
-        & > h2 {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-        }
+        & header {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-direction: row;
 
-        & > b {
-            font-size: 0.875em;
-            color: $moderateCyan;
+            & > h1 {
+                font-size: 1.1em;
+                margin-bottom: 20px;
+            }
+
+            & > span {
+                font-size: 0.875em;
+                color: $moderateCyan;
+                margin-bottom: 20px;
+            }
         }
 
         & > p {
@@ -160,7 +171,8 @@ section.project-info {
         }
 
         & .project-available {
-            & > h3 {
+            & > span {
+            font-weight: 600;
             font-size: 2.2em;
             display: inline-block;
             }
@@ -172,4 +184,76 @@ section.project-info {
             }
         }
     }
+}
+
+section.modal-projects {
+    width: calc(100% - 30px);
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 8px;
+
+    & header {
+        & > h1 {
+            margin-bottom: 20px;
+        }
+
+        & > p {
+            margin-bottom: 20px;
+            color: $darkGray
+        }
+    }
+
+    & article {
+        width: 100%;
+        padding: 25px;
+        border: 1px solid $lightGray;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & > header {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-bottom: 20px;
+
+            & > div {
+                width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+
+                & > h1 {
+                    font-size: 1em;
+                    padding-right: 10px;
+                }
+
+                & > span {
+                    color: $moderateCyan;
+                }
+            }
+        }
+
+        & > p {
+            color: $darkGray
+        }
+        
+        & .select-start {
+            display: none;
+        }
+    }
+}
+
+section.modal-success {
+    width: calc(100% - 30px);
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 8px;
 }

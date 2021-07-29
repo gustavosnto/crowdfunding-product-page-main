@@ -133,7 +133,8 @@ section.goals-block .goals-info {
   padding-left: 20px;
 }
 
-section.goals-block .goals-info h2 {
+section.goals-block .goals-info span {
+  font-weight: 600;
   font-size: 1.8em;
   margin-bottom: 10px;
 }
@@ -183,7 +184,7 @@ section.project-info p {
   margin-bottom: 25px;
 }
 
-section.project-info .block-plans {
+section.project-info article.block-plans {
   width: 100%;
   padding: 25px;
   border: 1px solid #c6c6c6;
@@ -199,31 +200,138 @@ section.project-info .block-plans {
           justify-content: space-between;
 }
 
-section.project-info .block-plans > h2 {
+section.project-info article.block-plans header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section.project-info article.block-plans header > h1 {
   font-size: 1.1em;
   margin-bottom: 20px;
 }
 
-section.project-info .block-plans > b {
+section.project-info article.block-plans header > span {
   font-size: 0.875em;
   color: #3cb4ac;
+  margin-bottom: 20px;
 }
 
-section.project-info .block-plans > p {
+section.project-info article.block-plans > p {
   color: #7a7a7a;
   line-height: 1.8;
   font-size: .875em;
 }
 
-section.project-info .block-plans .project-available > h3 {
+section.project-info article.block-plans .project-available > span {
+  font-weight: 600;
   font-size: 2.2em;
   display: inline-block;
 }
 
-section.project-info .block-plans .project-available b {
+section.project-info article.block-plans .project-available b {
   font-size: 1em;
   color: #7a7a7a;
   margin: 0px 5px;
+}
+
+section.modal-projects {
+  width: calc(100% - 30px);
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #FFF;
+  border-radius: 8px;
+}
+
+section.modal-projects header > h1 {
+  margin-bottom: 20px;
+}
+
+section.modal-projects header > p {
+  margin-bottom: 20px;
+  color: #7a7a7a;
+}
+
+section.modal-projects article {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid #c6c6c6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.modal-projects article > header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
+
+section.modal-projects article > header > div {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.modal-projects article > header > div > h1 {
+  font-size: 1em;
+  padding-right: 10px;
+}
+
+section.modal-projects article > header > div > span {
+  color: #3cb4ac;
+}
+
+section.modal-projects article > p {
+  color: #7a7a7a;
+}
+
+section.modal-projects article .select-start {
+  display: none;
+}
+
+section.modal-success {
+  width: calc(100% - 30px);
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #FFF;
+  border-radius: 8px;
 }
 
 @media (max-width: 36em) {
