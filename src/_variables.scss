@@ -202,7 +202,7 @@ div.modal {
 section.modal-projects {
     width: calc(100% - 30px);
     max-width: 680px;
-    margin: 100px auto 0 auto;
+    margin: 60px auto 0 auto;
     padding: 40px;
     background-color: #FFF;
     border-radius: 8px;
@@ -211,7 +211,7 @@ section.modal-projects {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        
+
         & > h1 {
             margin-bottom: 20px;
         }
