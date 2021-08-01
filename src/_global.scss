@@ -39,4 +39,9 @@ a {
     color: $white;
     background-color: $moderateCyan;
     cursor: pointer;
+
+    &:hover {
+        background-color: $darkCyan;
+        transition: 1s;
+    }
 }

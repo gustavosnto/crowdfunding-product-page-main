@@ -185,6 +185,15 @@ section.project-info {
         }
     }
 }
+article.block-disable {
+    background-color: $gray;
+    opacity: 30%;
+    
+    & .btn {
+        background-color: $darkGray;
+        cursor: no-drop;    
+    }
+}
 
 div.modal {
     display: none;
@@ -222,8 +231,12 @@ section.modal-projects {
             margin-bottom: 20px;
         }
 
-        & span > img {
-            width: 20px;
+        & span.close {
+            background-image: url(/images/icon-close-modal.svg);
+            width: 25px;
+            height: 25px;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
     }
 
